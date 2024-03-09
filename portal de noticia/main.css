@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(#355c7d,#6c5b7b, #d7879e, #cc0b1e);
+}
+
+body> header {
+    background-color: #21374a;
+    color: white;
+    padding: 50px0;
+}
+header .container{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    border: 16px;
+    border: #ffffff;
+}
+
+header li{
+    margin: 0 16px 0 16px;
+}
+
+header li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+header li a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+     gap: 16px; /*serve para haver um espassamento entre os elementos */
+    justify-content: space-evenly;
+}
+
+.articles article{
+    /* flex: 1; teste que naão deu serto kk*/
+    width: calc(30% - 16px);
+    background-color: rgba(0, 0, 0, 0.144) ;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 16px;
+}
+
+.articles article img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+}
+
+.articles article p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+section {
+    padding: 16px 0;
+}
+
+.articles article a {
+    color: whitesmoke;
+    background-color:#F8B195;
+    text-decoration: none;
+    padding: 1%;
+    margin: 1%;
+    border-bottom-right-radius:25%;
+    border-top-left-radius: 25%;
+    transition: 500ms;
+}
+
+.articles article a:hover {
+    color: rgb(84, 76, 98);
+    background-color: #faa381 ;
+    transition: 500ms;
+    border-bottom-right-radius:0%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius:50%;
+    box-shadow: 5px 5px 5px;
+    text-decoration: underline;
+}
